@@ -1,0 +1,10 @@
+python-dotenv
+ipykernel
+ipywidgets
+requests
+openai
+gradio
+chromadb
+jupyter-dash
+tiktoken
+ruff
