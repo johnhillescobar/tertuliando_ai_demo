@@ -35,6 +35,8 @@ El notebook principal del proyecto. Guía al usuario a través de los siguientes
 5. **Interfaz Gradio interactiva** — Permite al usuario experimentar en vivo cambiando el system prompt y la temperatura para observar cómo el mismo modelo produce respuestas radicalmente diferentes.
 6. **Conclusiones** — La IA es un espejo del prompt: si el prompt es honesto, el espejo refleja con claridad; si es sesgado, distorsiona con elocuencia.
 
+![Gradio Interface)](assets\biblegpt.png)
+
 ### `embeddings_demonstration.ipynb` — Visualización de Embeddings
 
 Notebook complementario que explora el concepto de embeddings con mayor profundidad:
@@ -44,7 +46,7 @@ Notebook complementario que explora el concepto de embeddings con mayor profundi
 - Reducción de dimensionalidad con PCA (SVD).
 - Visualización interactiva en 3D con Plotly, comparando cómo ambos modelos representan 30 textos diferentes en el espacio vectorial.
 
-![Embedding Visualizations (PCA → 3D)](embedding_plot.png)
+![Embedding Visualizations (PCA → 3D)](assets\embedding_plot.png)
 
 La gráfica muestra cómo los modelos `text-embedding-ada-002` y `text-embedding-3-small` organizan 30 textos en un espacio tridimensional reducido mediante PCA. Cada punto representa un texto; los que están más cercanos entre sí son semánticamente más similares según el modelo.
 
