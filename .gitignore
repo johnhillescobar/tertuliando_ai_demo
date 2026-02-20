@@ -12,3 +12,4 @@ wheels/
 .venv
 
 test_myfitness.ipynb
+docs/
