@@ -1,6 +1,6 @@
 from openai import OpenAI
 import gradio as gr
-from config import LLM_MODEL
+from config import LLM_MODEL, mensaje_de_systema_muy_sesgado
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -66,18 +66,19 @@ def message_chat(default_system_message: str = "", default_temperature: float = 
         inputs=[system_input, user_input, temp_input],
         outputs=[message_output],
         examples=[
-            [
-                default_system_message,
-                "Qué sucede en el día 4 de la creación según la Biblia?",
-                0.0,
-            ],
+            # [
+            #     default_system_message,
+            #     "Qué sucede en el día 4 de la creación según la Biblia?",
+            #     0.0,
+            # ],
             [
                 default_system_message,
                 "Cuáles fueron las personas que llegaron a la tumba de Jesús?",
                 0.0,
             ],
             [
-                default_system_message,
+                #default_system_message,
+                mensaje_de_systema_muy_sesgado,
                 "Cuáles fueron las personas que llegaron a la tumba de Jesús?",
                 1.0,
             ],
